@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using CarouselView.FormsPlugin.iOS;
 
 namespace CarousselTest.iOS
 {
@@ -24,6 +25,7 @@ namespace CarousselTest.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            CarouselViewRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }
